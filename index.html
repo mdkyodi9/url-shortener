@@ -51,7 +51,7 @@
           const [isCopied, setIsCopied] = useState(false);
           
           // State for the backend API URL. This is now set to your Render URL.
-          const [backendUrl, setBackendUrl] = useState('https://url-shortener-1lxe.onrender.com');
+          const [backendUrl, setBackendUrl] = useState('https://url-shortener-backend-c1ob.onrender.com');
           
           // Function to validate the URL format
           const isValidUrl = (url) => {
@@ -150,14 +150,6 @@
                   <p className="mt-2 text-gray-500 font-inter text-md sm:text-lg">
                     Paste a long URL and get a short link.
                   </p>
-                  <div className="mt-4">
-                    <p className="text-sm text-gray-400">
-                      Backend URL: <span className="font-mono text-gray-600 break-all">{backendUrl || 'Not set'}</span>
-                    </p>
-                    <p className="text-xs text-red-500 font-medium mt-1">
-                      Remember to replace the empty backend URL with your actual deployed URL!
-                    </p>
-                  </div>
                 </header>
 
                 <main>
